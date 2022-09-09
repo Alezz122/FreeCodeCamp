@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1 id="title">Survey</h1>
+      <p id="description">Complete this survey to enter to the giveaway! :)</p>
+      <form id="survey-form">
+        <div class="input-group">
+          <label for="name" id="name-label" class="description-input">Name</label>
+          <input type="text" id="name" required placeholder="Enter your name...">
+        </div>
+        <div class="input-group">
+          <label for="email" id="email-label" class="description-input">Email</label>
+          <input type="email" id="email" required placeholder="Enter your Email...">
+        </div>
+        <div class="input-group">
+          <label for="number" id="number-label" class="description-input">Age <span
+              class="small-text">(optional)</span></label>
+          <input type="number" id="number" min="0" max="100" placeholder="Age">
+        </div>
+
+        <div class="input-group">
+          <p class="description-input">Choose a continent</p>
+          <select id="dropdown">
+            <option>Europe</option>
+            <option>South America</option>
+            <option>North America</option>
+            <option>Africa</option>
+            <option>Australia</option>
+            <option>Asia</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <p class="description-input">Put your gender</p>
+          <div class="group">
+            <div class="radio-buttons">
+              <label for="gender">Male</label><input type="radio" id="gender" name="gender" value="male">
+            </div>
+            <div class="radio-buttons">
+              <label for="gender">Female</label><input type="radio" id="gender" name="gender" value="female">
+            </div>
+          </div>
+        </div>
+        <div class="input-group">
+          <p class="description-input">Choose some habbit</p>
+          <div class="group">
+            <div class="checkbox-buttons">
+              <label for="exercise">Exercise</label><input type="checkbox" value="exercise" id="excercise">
+            </div>
+            <div class="checkbox-buttons">
+              <label for="reed">Reed</label><input type="checkbox" value="reed" id="reed">
+            </div>
+            <div class="checkbox-buttons">
+              <label for="hang-out">Hang out</label><input type="checkbox" value="hang-out" id="hang-out">
+            </div>
+            <div class="checkbox-buttons">
+              <label for="listen-music">Listen to music</label><input type="checkbox" value="listen-music"
+                id="listen-music">
+            </div>
+          </div>
+        </div>
+        <p class="description-input">Make some comments</p>
+        <textarea placeholder="Comments..."></textarea>
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <body>
+
+</html>

@@ -129,7 +129,7 @@ nav ul li:hover {
     margin-left: 10px;
   }
   pre {
-    width: auto;
+    width: 300px;
     overflow: scroll;
   }
   code {

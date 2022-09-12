@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    position: fixed;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    box-shadow: 0px 2px 15px rgba(116, 116, 116, 0.411);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.logo-text h2 {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    font-size: 3.5vmin;
+}
+
+.logo-text svg {
+    vertical-align: middle;
+    width: 10vmin;
+    height: auto;
+}
+
+.nav-links li {
+    align-self: center;
+}
+.nav-links li a {
+    padding: 55px;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(0, 0, 0, 0.171);
+    transition: 0.2s;
+}
+
+.nav-links li a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    padding-left: 100px;
+}
+
+header img {
+    width: 25vw;
+    height: 25vw;
+}
+
+.text-header {
+    color: #fff;
+}
+
+.text-header h3 {
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.text-header h1 {
+    font-size: 74px;
+    font-weight: 800;
+}
+
+.text-header p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+form input {
+    display: block;
+    margin-bottom: 10px;
+    width: 20vw;
+    height: 50px;
+    background: #343434;
+    border: 1px solid #3598F4;
+    border-radius: 7px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+form input:hover{
+    outline: none;
+    border: 2px solid #3598F4;
+    background-color: #3a3a3a;
+}
+
+form input:focus{
+    outline: none;
+    border: 2px solid #3598F4;
+    background-color: #3a3a3a;
+}
+
+form button {
+    background: #3598F4;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #9ed0ff;
+    transition: 0.2s;
+}
+
+/* FEATURES */
+
+.features {
+    height: 90vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.features h2 {
+    font-size: 65px;
+    font-weight: 800;
+    text-align: center;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item p {
+    text-align: center;
+    width: 20vw;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+/* HOW IT WORKS */
+
+.how-it-works {
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.how-it-works h2 {
+    font-size: 65px;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+}
+
+.how-it-works video {
+    width: 50vw;
+    height: auto;
+    background-color: #000;
+}
+
+/* PRICING */
+.pricing {
+    height: 120vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.pricing h2 {
+    font-size: 65px;
+    font-weight: 800;
+    text-align: center;
+    color: #000;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.card {
+    width: 16vw;
+    height: auto;
+    background-color: #EDEDED;
+    border-radius: 8px;
+    border: 1px solid rgba(48, 48, 48, 0.13);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.048);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.card:not(:hover){
+    transition: 0.2s;
+    transform: scale(1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.card .container-description {
+    background-color: #D9D9D9;
+}
+.card .description {
+    font-size: 24px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.card .price {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0 0 20px 0;
+}
+.card ul li {
+    text-align: center;
+}
+
+.card .select-product-btn {
+    background-color: #EEE860;
+    padding: 20px;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    font-weight: 800;
+    cursor: pointer;
+} 
+
+.card .select-product-btn:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: 0.2s;
+} 
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    width: 100%;
+    height: 200px;
+}
+
+/* KEYFRAMES */
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 800px){
+    nav {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        border-top: 1px solid #000;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .nav-links li a {
+        padding: 0;
+    }
+    .nav-links li a:hover {
+        padding: 0;
+        background: none;
+    }
+}

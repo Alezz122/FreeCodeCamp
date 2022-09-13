@@ -10,42 +10,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="logo-text">
-            <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_4_21)">
-                <path d="M31 2.58334C18.1608 2.58334 7.75 12.9942 7.75 25.8333V43.9167C7.75 48.205 11.2117 51.6667 15.5 51.6667H23.25V31H12.9167V25.8333C12.9167 15.8358 21.0025 7.75001 31 7.75001C40.9975 7.75001 49.0833 15.8358 49.0833 25.8333V31H38.75V51.6667H46.5C50.7883 51.6667 54.25 48.205 54.25 43.9167V25.8333C54.25 12.9942 43.8392 2.58334 31 2.58334Z" fill="black"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_4_21">
-                <rect width="62" height="62" fill="white"/>
-                </clipPath>
-                </defs>
-            </svg>
-            <h2>THE HEADPHONES INDUSTRY</h2>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="#features">Features</a>
-            </li>
-            <li>
-                <a href="#how-it-works">How it works</a>
-            </li>
-            <li>
-                <a href="#pricing">Pricing</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <img src="https://cwsmgmt.corsair.com/landing/virtuoso/assets/images/VIRTUOSO-White.png" alt="Headseat white">
-        <div class="text-header">
-            <h3>NEW HEADSEAT</h3>
-            <h1>THE BLURRIES</h1>
-            <p>Subscribe to our newsletter !</p>
-            <form action="">
-                <input type="email" name="" id="" placeholder="Enter your email address...">
-                <button type="submit">Register</button>
-            </form>
+    <header id="header">
+        <nav id="nav-bar">
+            <div class="logo-text">
+                <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_4_21)">
+                    <path d="M31 2.58334C18.1608 2.58334 7.75 12.9942 7.75 25.8333V43.9167C7.75 48.205 11.2117 51.6667 15.5 51.6667H23.25V31H12.9167V25.8333C12.9167 15.8358 21.0025 7.75001 31 7.75001C40.9975 7.75001 49.0833 15.8358 49.0833 25.8333V31H38.75V51.6667H46.5C50.7883 51.6667 54.25 48.205 54.25 43.9167V25.8333C54.25 12.9942 43.8392 2.58334 31 2.58334Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_4_21">
+                    <rect width="62" height="62" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+                <h2>THE HEADPHONES INDUSTRY</h2>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#how-it-works">How it works</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="margin"></div>
+        <div class="header-content">
+            <img src="https://cwsmgmt.corsair.com/landing/virtuoso/assets/images/VIRTUOSO-White.png" id="header-img" alt="Headseat white">
+            <div class="text-header">
+                <h3>NEW HEADSEAT</h3>
+                <h1>THE BLURRIES</h1>
+                <p>Subscribe to our newsletter !</p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" name="email" id="email" placeholder="Enter your email address...">
+                    <input type="submit" value="Register" id="submit" class="submit">
+                </form>
+            </div>
         </div>
     </header>
     <section class="features" id="features">
@@ -76,7 +79,7 @@
     </section>
     <section class="how-it-works" id="how-it-works">
         <h2>HOW IT WORKS</h2>
-        <video src=""></video>
+        <video id="video" src=""></video>
     </section>
     <section class="pricing" id="pricing">
         <h2>PRICING</h2>

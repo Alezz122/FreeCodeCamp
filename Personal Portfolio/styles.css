@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #fff;
+    background-color: rgb(43, 43, 43);
+    font-family: 'Open Sans';
+}
+ul {
+    list-style: none;
+}
+h2 {
+    font-family: 'Allison';
+    font-weight: 100;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+header {
+    background-image: url('https://images.unsplash.com/photo-1548319558-d4987a6a217c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    align-self: flex-start;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.61);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    gap: 50px;
+}
+header nav .nav-links li {
+    transform: rotate(90deg);
+    font-size: 24px;
+}
+
+header nav .nav-links li a::before {
+    content: "";
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    top: 40px;
+    background-color: #fff;
+}
+
+header nav .nav-links li a:hover::before {
+    content: "";
+    width: 110px;
+    height: 3px;
+    position: absolute;
+    top: 40px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+header nav .nav-links li a:not(:hover)::before {
+    height: 3px;
+    transition: 0.3s;
+}
+
+header nav .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+header .text {
+    margin-top: 500px;
+}
+header .text h2{
+    font-size: 122px;
+    display: flex;
+    justify-content: center;
+}
+header .text h1{
+    font-size: 72px;
+}
+
+section {
+    width: 100%;
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+section h2 {
+    margin: auto;
+    font-size: 62px;
+}
+.container-about-me {
+    margin: auto;
+    display: flex;
+    background-image: url('https://images.unsplash.com/photo-1545431613-51ec097943c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 600px;
+}
+
+.container-about-me p{
+    padding: 10px;
+    line-height: 30px;
+}
+
+.line {
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #FF0000 0%, #FF9B04 14.58%, #A0FF04 28.13%, #09FF04 41.15%, #04FF87 53.65%, #04E1FF 64.06%, #044AFF 76.56%, #5404FF 86.98%, #FF04E6 96.35%);
+}
+
+.container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: center;
+    gap: 25px;
+}
+
+.project {
+    width: 500px;
+    height: 550px;
+    background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    transition: 0.2s;
+    box-shadow: 4px 4px 10px rgba(133, 133, 133, 0.158);
+}
+
+.project:not(:hover) {
+    transform: scale(1);
+    transition: 0.2s;
+}
+.project .content .technologies {
+    display: flex;
+    gap: 5px;
+}
+.project .content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    margin-top: auto;
+}
+
+.project .content .view-project{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    background-color: #044AFF;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input {
+    height: 50px;
+}
+input, textarea {
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    background: #1a1a1a;
+    width: 500px;
+    border: 1px solid #525252;
+    outline: none;
+}
+
+input:hover, textarea:hover {
+    outline: 2px solid #525252;
+}
+input:focus, textarea:focus {
+    outline: 2px solid #525252;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #41c73e;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #1b8819;
+    outline: none;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    nav {
+        position:fixed;
+        right: 0;
+        top: 0;
+        height: 100px !important;
+        width: 100%;
+        flex-direction: row !important;
+        align-self: flex-start;
+        padding: 0;
+        justify-content: center !important;
+        z-index: 2;
+    }
+    header nav .nav-links li {
+        transform: rotate(0deg);
+    }
+    .nav-links {
+        flex-direction: row !important;
+        gap: 40px !important;
+    }
+    header .text {
+        margin-top: 0;
+    }
+    header .text h1 {
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .container-projects {
+        width: 500px !important;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .container-about-me {
+        flex-direction: column;
+        width: 300px;
+        background-image: none;
+    }
+    .container-about-me img {
+        width: 300px;
+    }
+    .container-about-me p {
+        text-align: center;
+    }
+    .line {
+        display: none;
+    }
+    header nav .nav-links li a::before {
+        content: "";
+        width: 0px;
+        height: 0px !important;
+        position: absolute;
+        top: 40px;
+        background-color: #fff;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    nav {
+        gap: 20px !important;
+    }
+    .nav-links {
+        gap: 10px !important;
+    }
+    .nav-links li {
+        font-size: 15px !important;
+    }
+    #profile-link svg {
+        width: 30px !important;
+    }
+    .logo svg {
+        width: 30px;
+    }
+    .project {
+        width: 300px;
+        height: 300px;
+    }
+    form input, form textarea {
+        width: 80vw;
+    }
+}
